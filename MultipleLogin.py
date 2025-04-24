@@ -22,7 +22,7 @@ for row in range(2, sheet.max_row + 1):
     driver.get("https://uat.carematch.com/homecare/login")
 
     try:
-        # Enter credentials
+        # Enter test credentials
         if password and username:
             driver.find_element(By.XPATH, '//*[@id="EmailID"]').send_keys(username)
             driver.find_element(By.XPATH, '//*[@id="Password"]').send_keys(password)
